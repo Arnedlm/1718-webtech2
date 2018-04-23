@@ -13,22 +13,22 @@
     xhr.send();
 };
 
-getJSON('https://www.booknomads.com/api/v0/isbn/9789000035526', function(error, data){
+getJSON('https://www.booknomads.com/api/v0/isbn/9789059406148', function(error, data){
 
   if(error) {  
     // do something here
     return false;
   }
 
-  for(let i = 0; i < data.length; i++) {
-    
-            // current parking object
-            let isbn = data[i];
-    
-            // do magic here
-            
-            
-        }
+  let img = document.getElementById("bookImage");
+  let titel = document.getElementById("bookTitle");
+  let auteur = document.getElementById("bookAuthor");
+  let descrip = document.getElementById("bookDescription");
+
+  img.src = data.CoverThumb;
+  titel.textContent = data.Title;
+  auteur.textContent = data.Authors.Name;
+  
 
 
 
