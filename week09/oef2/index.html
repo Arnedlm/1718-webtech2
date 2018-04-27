@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Week 9 - Oefening 2</title>
+</head>
+<body>
+    <form action="">
+        <ul>
+            <li>
+                <label for="shirtColor">Welke kleur T-shirt had de mol vandaag aan?</label>
+                <input type="text"  id="shirtColor" required pattern="rood|groen|grijs|zwart">
+            </li>
+            <li>
+                <label for="r1">Sliep de mol vannacht in de auto?</label>
+                <ul>
+                    <li ><input id="r1" type="radio" name="auto" value="ja">Ja</li>
+                    <li ><input type="radio" name="auto" value="nee" checked>Nee</li>
+                    
+                </ul>                 
+            </li>
+            <li>
+                <label for="age">Hoe oud schat je de mol?</label>
+                <input type="number" id="age" min="21" max="62" required>            
+            </li>
+            <li>
+                <label for="email">Als de mol een e-mail adres heeft met volgend patroon: voornaam@demol.be; wat is dan zijn of haar e-mail adres?</label>
+                <input type="email" id="email" required pattern="[\w.%+-]+@demol.be$">            
+            </li>
+            <li>
+                <label for="textarea">Argumenteer je antwoord</label>
+                <textarea name="" id="textarea" cols="30" rows="5" minlength="100" required></textarea>
+            </li>
+        </ul>
+
+
+    </form>
+    <script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    background-image: url(https://www.wieisdemol.be/img/bodyback.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(7, 18, 23);
+}
+input,button{
+    border-radius: 40px;
+    height: 40px;
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+    vertical-align: center
+}
+button{
+    border: 0;
+    background-color: rgb(19, 219, 36);
+}
